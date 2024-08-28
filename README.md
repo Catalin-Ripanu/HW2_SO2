@@ -4,13 +4,13 @@ A kernel operations surveillant.
 
 With this surveillant, the task is to intercept:
 
-  1. kmalloc and kfree calls
+  - kmalloc and kfree calls
 
-  2. schedule calls
+  - schedule calls
 
-  3. up and down_interruptible calls
+  - up and down_interruptible calls
 
-  4. mutex_lock and mutex_unlock calls
+  - mutex_lock and mutex_unlock calls
 
 The surveillant will hold, at the process level, the number of calls for each of the above functions. For the kmalloc and kfree calls the total quantity of allocated and deallocated memory will be shown.
 
